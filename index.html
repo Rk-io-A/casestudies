@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajiv Kapur | Software Architect & Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Rajiv Kapur - Software Architect & Full Stack Developer. Projects: AI Job Portal, Food Delivery, SaaS Analytics, Realtime Whiteboard, AI Content Generator." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-text {
+      background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 25px 50px -12px rgba(99, 102, 241, 0.25);
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-xl border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <a href="#" class="font-display font-bold text-xl tracking-tight">Rajiv Kapur</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+        <a href="#projects" class="hover:text-white transition">Projects</a>
+        <a href="#about" class="hover:text-white transition">About</a>
+        <a href="https://github.com/Rk-io-A" target="_blank" class="hover:text-white transition">GitHub</a>
+        <a href="https://rajivkapur.in.net" target="_blank" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-white transition">Portfolio</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="pt-32 pb-20 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-sm font-medium mb-6">
+        <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+        Available for opportunities
+      </div>
+      <h1 class="font-display text-5xl md:text-7xl font-bold leading-tight mb-6">
+        Software Architect<br/>
+        <span class="gradient-text">& Full Stack Developer</span>
+      </h1>
+      <p class="text-xl text-slate-400 max-w-2xl mx-auto mb-10">
+        I design and ship production-grade web platforms, AI products, and digital commerce systems — from architecture to deployment.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#projects" class="px-8 py-3.5 bg-indigo-600 hover:bg-indigo-500 rounded-xl font-semibold transition shadow-lg shadow-indigo-500/25">
+          View Projects
+        </a>
+        <a href="https://github.com/Rk-io-A" target="_blank" class="px-8 py-3.5 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-xl font-semibold transition">
+          GitHub Profile
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">Full Stack Projects</h2>
+        <p class="text-slate-400 text-lg">5 production-ready applications with Frontend + Backend</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <!-- Project 1 -->
+        <a href="https://github.com/Rk-io-A/ai-job-portal" target="_blank" class="card-hover block bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group">
+          <div class="h-40 bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center text-6xl">
+            💼
+          </div>
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-blue-500/20 text-blue-300">Next.js + FastAPI</span>
+              <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-slate-700 text-slate-300">AI</span>
+            </div>
+            <h3 class="text-xl font-bold mb-2 group-hover:text-indigo-400 transition">AI Job Portal</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">AI-powered job board with smart matching, resume analysis, JWT auth, and employer/candidate roles.</p>
+          </div>
+        </a>
+
+        <!-- Project 2 -->
+        <a href="https://github.com/Rk-io-A/food-delivery-platform" target="_blank" class="card-hover block bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group">
+          <div class="h-40 bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center text-6xl">
+            🍔
+          </div>
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-orange-500/20 text-orange-300">Next.js + FastAPI</span>
+              <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-slate-700 text-slate-300">Multi-vendor</span>
+            </div>
+            <h3 class="text-xl font-bold mb-2 group-hover:text-orange-400 transition">Food Delivery Platform</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">Swiggy/Zomato style multi-vendor platform with restaurants, menu, cart, orders and role-based access.</p>
+          </div>
+        </a>
+
+        <!-- Project 3 -->
+        <a href="https://github.com/Rk-io-A/saas-analytics-dashboard" target="_blank" class="card-hover block bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group">
+          <div class="h-40 bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-6xl">
+            📊
+          </div>
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300">Next.js + FastAPI</span>
+              <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-slate-700 text-slate-300">SaaS</span>
+            </div>
+            <h3 class="text-xl font-bold mb-2 group-hover:text-emerald-400 transition">SaaS Analytics Dashboard</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">Track MRR, Churn Rate, Active Subscribers and Revenue. Ready for Stripe webhook integration.</p>
+          </div>
+        </a>
+
+        <!-- Project 4 -->
+        <a href="https://github.com/Rk-io-A/realtime-whiteboard" target="_blank" class="card-hover block bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group">
+          <div class="h-40 bg-gradient-to-br from-violet-500 to-purple-700 flex items-center justify-center text-6xl">
+            🎨
+          </div>
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-violet-500/20 text-violet-300">Next.js + FastAPI</span>
+              <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-slate-700 text-slate-300">WebSocket</span>
+            </div>
+            <h3 class="text-xl font-bold mb-2 group-hover:text-violet-400 transition">Realtime Whiteboard</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">Collaborative drawing canvas + live chat. Multiple users draw and chat in real-time using WebSockets.</p>
+          </div>
+        </a>
+
+        <!-- Project 5 -->
+        <a href="https://github.com/Rk-io-A/ai-content-generator" target="_blank" class="card-hover block bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group md:col-span-2">
+          <div class="h-40 bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center text-6xl">
+            ✍️
+          </div>
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-pink-500/20 text-pink-300">Next.js + FastAPI</span>
+              <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-slate-700 text-slate-300">OpenAI Ready</span>
+            </div>
+            <h3 class="text-xl font-bold mb-2 group-hover:text-pink-400 transition">AI Content Generator + SEO Blog</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">Generate complete SEO-optimized blog posts from a topic. Includes meta description, keywords, SEO score and publish flow.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 px-4 border-t border-slate-800">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="font-display text-3xl font-bold mb-6">About Me</h2>
+      <p class="text-slate-400 text-lg leading-relaxed mb-8">
+        I'm a <strong class="text-white">Software Architect and Full Stack Developer</strong>, founder of Sirmint Technology. 
+        I work across ASP.NET Core, React, Next.js, FastAPI, Cloud, and AI integrations — turning ideas into reliable production systems.
+      </p>
+      <div class="flex flex-wrap justify-center gap-3 text-sm">
+        <span class="px-4 py-2 rounded-full bg-slate-800 border border-slate-700">ASP.NET Core</span>
+        <span class="px-4 py-2 rounded-full bg-slate-800 border border-slate-700">React / Next.js</span>
+        <span class="px-4 py-2 rounded-full bg-slate-800 border border-slate-700">FastAPI</span>
+        <span class="px-4 py-2 rounded-full bg-slate-800 border border-slate-700">TypeScript</span>
+        <span class="px-4 py-2 rounded-full bg-slate-800 border border-slate-700">AWS / Azure</span>
+        <span class="px-4 py-2 rounded-full bg-slate-800 border border-slate-700">AI Integrations</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 border-t border-slate-800 text-center text-sm text-slate-500">
+    <p>Built by <strong class="text-slate-300">Rajiv Kapur</strong> · Software Architect & Full Stack Developer</p>
+    <p class="mt-2">
+      <a href="https://github.com/Rk-io-A" class="hover:text-indigo-400 transition">GitHub</a> · 
+      <a href="https://rajivkapur.in.net" class="hover:text-indigo-400 transition">Portfolio</a> · 
+      <a href="mailto:rajivkapur@sirmint.com" class="hover:text-indigo-400 transition">Email</a>
+    </p>
+  </footer>
+
+</body>
+</html>
