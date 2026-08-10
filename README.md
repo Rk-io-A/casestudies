@@ -1,30 +1,43 @@
-# Rajiv Kapur — Portfolio
+# Rajiv Kapur — Premium Portfolio
 
 **Software Architect & Full Stack Developer**
 
-This is a static portfolio website showcasing all full-stack projects.
+Multi-page static portfolio with complete case studies, tech stacks, contact form, and chatbot.
 
-## Live Website (GitHub Pages)
-
-After enabling GitHub Pages:
+## Live Website
 
 **https://rk-io-a.github.io/portfolio/**
 
-### How to enable GitHub Pages
+### Enable GitHub Pages
+1. Settings → Pages
+2. Source: Deploy from a branch
+3. Branch: `main` / folder: `/ (root)`
+4. Save
 
-1. Go to **Settings → Pages**
-2. Source → **Deploy from a branch**
-3. Branch → **main** + folder → **/ (root)**
-4. Click **Save**
+## Pages
 
-## Projects Showcased
+| Page | Description |
+|------|-------------|
+| `index.html` | Home – hero, stats, featured projects, strong CTAs |
+| `projects.html` | Full case studies + tech stacks for all 5 projects |
+| `about.html` | About + complete technology stack |
+| `contact.html` | Contact form + consultation CTA |
+| `js/chatbot.js` | Client-side chatbot (all pages) |
 
-1. [AI Job Portal](https://github.com/Rk-io-A/ai-job-portal)
-2. [Food Delivery Platform](https://github.com/Rk-io-A/food-delivery-platform)
-3. [SaaS Analytics Dashboard](https://github.com/Rk-io-A/saas-analytics-dashboard)
-4. [Realtime Whiteboard](https://github.com/Rk-io-A/realtime-whiteboard)
-5. [AI Content Generator](https://github.com/Rk-io-A/ai-content-generator)
+## Features
+- Complete case studies (Problem → Solution → Tech → Features)
+- Full technology stack section
+- Contact form (opens email client)
+- Floating chatbot assistant
+- Customer-focused CTAs
+- Premium dark UX
+
+## Projects Linked
+1. AI Job Portal
+2. Food Delivery Platform
+3. SaaS Analytics Dashboard
+4. Realtime Whiteboard
+5. AI Content Generator
 
 ---
-
 Made by Rajiv Kapur
