@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Rajiv Kapur</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','sans-serif'],display:['Space Grotesk','sans-serif']}}}}</script>
+  <style>body{font-family:'Inter',sans-serif}</style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+
+<nav class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/80">
+  <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+    <a href="index.html" class="font-display font-bold text-xl">Rajiv Kapur</a>
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+      <a href="index.html" class="hover:text-white transition">Home</a>
+      <a href="projects.html" class="hover:text-white transition">Projects</a>
+      <a href="about.html" class="hover:text-white transition">About</a>
+      <a href="contact.html" class="text-white">Contact</a>
+    </div>
+    <a href="contact.html" class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 rounded-xl text-sm font-semibold transition">Let's Talk</a>
+  </div>
+</nav>
+
+<section class="pt-28 pb-20 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid lg:grid-cols-2 gap-12">
+      <!-- Left -->
+      <div>
+        <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">Let's build something</h1>
+        <p class="text-slate-400 text-lg mb-8 leading-relaxed">
+          Whether you need a full product, an MVP, architecture review, or a long-term engineering partner — I'm here to help.
+        </p>
+
+        <div class="space-y-6 mb-10">
+          <div class="flex gap-4">
+            <div class="w-12 h-12 rounded-xl bg-indigo-500/20 flex items-center justify-center text-indigo-400 text-xl">✉</div>
+            <div>
+              <p class="font-semibold">Email</p>
+              <a href="mailto:rajivkapur@sirmint.com" class="text-slate-400 hover:text-indigo-400 transition">rajivkapur@sirmint.com</a>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="w-12 h-12 rounded-xl bg-indigo-500/20 flex items-center justify-center text-indigo-400 text-xl">🌐</div>
+            <div>
+              <p class="font-semibold">Website</p>
+              <a href="https://rajivkapur.in.net" target="_blank" class="text-slate-400 hover:text-indigo-400 transition">rajivkapur.in.net</a>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="w-12 h-12 rounded-xl bg-indigo-500/20 flex items-center justify-center text-indigo-400 text-xl">💼</div>
+            <div>
+              <p class="font-semibold">Company</p>
+              <a href="https://sirmint.com" target="_blank" class="text-slate-400 hover:text-indigo-400 transition">sirmint.com</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+          <h3 class="font-semibold mb-3">What I can help with</h3>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li class="flex gap-2"><span class="text-indigo-400">✓</span> Full-stack product development</li>
+            <li class="flex gap-2"><span class="text-indigo-400">✓</span> SaaS & AI application architecture</li>
+            <li class="flex gap-2"><span class="text-indigo-400">✓</span> MVP to production launch</li>
+            <li class="flex gap-2"><span class="text-indigo-400">✓</span> Code review & technical consulting</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8">
+        <h2 class="font-display text-2xl font-bold mb-2">Send a message</h2>
+        <p class="text-slate-400 text-sm mb-6">I'll get back within 24 hours.</p>
+
+        <form id="contact-form" class="space-y-5" onsubmit="handleSubmit(event)">
+          <div>
+            <label class="block text-sm font-medium text-slate-300 mb-1.5">Your Name</label>
+            <input type="text" id="name" required placeholder="John Doe"
+              class="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 focus:border-indigo-500 focus:outline-none transition" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-300 mb-1.5">Email</label>
+            <input type="email" id="email" required placeholder="you@company.com"
+              class="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 focus:border-indigo-500 focus:outline-none transition" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-300 mb-1.5">Project Type</label>
+            <select id="type" class="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 focus:border-indigo-500 focus:outline-none transition">
+              <option>New Product / MVP</option>
+              <option>SaaS Platform</option>
+              <option>AI Feature Integration</option>
+              <option>Consulting / Architecture</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-300 mb-1.5">Message</label>
+            <textarea id="message" required rows="4" placeholder="Tell me about your project..."
+              class="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 focus:border-indigo-500 focus:outline-none transition resize-none"></textarea>
+          </div>
+          <button type="submit" class="w-full py-4 bg-indigo-600 hover:bg-indigo-500 rounded-xl font-semibold text-lg transition shadow-lg shadow-indigo-500/25">
+            Send Message
+          </button>
+        </form>
+
+        <p id="form-success" class="hidden mt-4 text-center text-green-400 text-sm">Thanks! Opening your email client...</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="border-t border-slate-800 py-10 px-4 text-center text-sm text-slate-500">
+  <p>© 2026 Rajiv Kapur · <a href="index.html" class="hover:text-indigo-400">Home</a> · <a href="projects.html" class="hover:text-indigo-400">Projects</a></p>
+</footer>
+
+<script>
+function handleSubmit(e) {
+  e.preventDefault();
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const type = document.getElementById('type').value;
+  const message = document.getElementById('message').value;
+
+  const subject = encodeURIComponent(`[Portfolio] ${type} - from ${name}`);
+  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nProject Type: ${type}\n\nMessage:\n${message}`);
+
+  window.location.href = `mailto:rajivkapur@sirmint.com?subject=${subject}&body=${body}`;
+
+  document.getElementById('form-success').classList.remove('hidden');
+}
+</script>
+
+<script src="js/chatbot.js"></script>
+<div id="chatbot" class="fixed bottom-6 right-6 z-50">
+  <button id="chat-toggle" class="w-14 h-14 bg-indigo-600 hover:bg-indigo-500 rounded-full shadow-xl flex items-center justify-center transition">
+    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+  </button>
+  <div id="chat-window" class="hidden absolute bottom-16 right-0 w-80 bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl overflow-hidden">
+    <div class="bg-indigo-600 px-4 py-3 flex justify-between"><span class="font-semibold text-sm">Chat Assistant</span><button id="chat-close">✕</button></div>
+    <div id="chat-messages" class="h-64 overflow-y-auto p-4 space-y-3 text-sm"><div class="bg-slate-800 rounded-xl p-3 text-slate-300">Hi! Need help before contacting? Ask me anything.</div></div>
+    <div class="p-3 border-t border-slate-700 flex gap-2">
+      <input id="chat-input" type="text" placeholder="Message..." class="flex-1 bg-slate-800 border border-slate-600 rounded-xl px-3 py-2 text-sm focus:outline-none focus:border-indigo-500"/>
+      <button id="chat-send" class="px-3 py-2 bg-indigo-600 rounded-xl text-sm">Send</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
