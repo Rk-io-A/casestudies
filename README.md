@@ -1,43 +1,45 @@
-# Rajiv Kapur — Premium Portfolio
+# Case Studies — Rajiv Kapur
 
-**Software Architect & Full Stack Developer**
+**Full Stack Product Case Studies**
 
-Multi-page static portfolio with complete case studies, tech stacks, contact form, and chatbot.
+This site is **only case studies** — not a personal portfolio homepage.  
+Each study covers problem, solution, tech stack, and key features.
 
-## Live Website
+## Live site
 
-**https://rk-io-a.github.io/portfolio/**
-
-### Enable GitHub Pages
-1. Settings → Pages
-2. Source: Deploy from a branch
-3. Branch: `main` / folder: `/ (root)`
-4. Save
+**https://casestudies.rajivkapur.in.net**  
+(also: https://rk-io-a.github.io/casestudies/)
 
 ## Pages
 
-| Page | Description |
-|------|-------------|
-| `index.html` | Home – hero, stats, featured projects, strong CTAs |
-| `projects.html` | Full case studies + tech stacks for all 5 projects |
-| `about.html` | About + complete technology stack |
-| `contact.html` | Contact form + consultation CTA |
-| `js/chatbot.js` | Client-side chatbot (all pages) |
+| File | Purpose |
+|------|---------|
+| `index.html` | Case studies overview (all 5 projects) |
+| `projects.html` | Detailed write-ups (Problem → Solution → Tech → Features) |
 
-## Features
-- Complete case studies (Problem → Solution → Tech → Features)
-- Full technology stack section
-- Contact form (opens email client)
-- Floating chatbot assistant
-- Customer-focused CTAs
-- Premium dark UX
+## Case studies included
 
-## Projects Linked
-1. AI Job Portal
-2. Food Delivery Platform
-3. SaaS Analytics Dashboard
-4. Realtime Whiteboard
-5. AI Content Generator
+1. **AI Job Portal** — https://github.com/Rk-io-A/ai-job-portal  
+   Next.js + FastAPI · JWT roles · AI matching
+
+2. **Food Delivery Platform** — https://github.com/Rk-io-A/food-delivery-platform  
+   Multi-vendor · Restaurants · Orders · Roles
+
+3. **SaaS Analytics Dashboard** — https://github.com/Rk-io-A/saas-analytics-dashboard  
+   MRR · Churn · Active subscribers
+
+4. **Realtime Whiteboard** — https://github.com/Rk-io-A/realtime-whiteboard  
+   WebSockets · Collaborative canvas · Live chat
+
+5. **AI Content Generator** — https://github.com/Rk-io-A/ai-content-generator  
+   SEO blog generation · Meta · Keywords · Score
+
+## Note
+
+- This repo is **case studies only** (no About / Contact portfolio pages in the main flow).
+- Custom domain: `casestudies.rajivkapur.in.net`
 
 ---
-Made by Rajiv Kapur
+
+Rajiv Kapur · Software Architect & Full Stack Developer  
+https://github.com/Rk-io-A
