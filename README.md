@@ -1,45 +1,45 @@
 # Case Studies — Rajiv Kapur
 
-**Full Stack Product Case Studies**
+Public engineering case-study site covering selected full-stack portfolio projects.
 
-This site is **only case studies** — not a personal portfolio homepage.  
-Each study covers problem, solution, tech stack, and key features.
+**Live:** `https://casestudies.rajivkapur.in.net`
 
-## Live site
+> The projects below are engineering demonstrations. Sample companies, users, jobs, orders, revenue, messages and other business data are illustrative unless a case study explicitly identifies a real production system.
 
-**https://casestudies.rajivkapur.in.net**  
-(also: https://rk-io-a.github.io/casestudies/)
+## Scope
 
-## Pages
+This repository is the case-study presentation layer, not the main personal portfolio.
 
-| File | Purpose |
-|------|---------|
-| `index.html` | Case studies overview (all 5 projects) |
-| `projects.html` | Detailed write-ups (Problem → Solution → Tech → Features) |
+Current studies:
 
-## Case studies included
+1. **AI Job Portal** — Next.js + FastAPI, JWT roles, AI integration pattern
+2. **Food Delivery Platform** — multi-role commerce/delivery workflow
+3. **SaaS Analytics Dashboard** — subscription metrics and billing-event patterns
+4. **Realtime Whiteboard** — WebSocket collaboration and live chat
+5. **AI Content Generator** — AI drafting and SEO workflow patterns
 
-1. **AI Job Portal** — https://github.com/Rk-io-A/ai-job-portal  
-   Next.js + FastAPI · JWT roles · AI matching
+## Related repositories
 
-2. **Food Delivery Platform** — https://github.com/Rk-io-A/food-delivery-platform  
-   Multi-vendor · Restaurants · Orders · Roles
+```text
+Rk-io-A/ai-job-portal
+Rk-io-A/food-delivery-platform
+Rk-io-A/saas-analytics-dashboard
+Rk-io-A/realtime-whiteboard
+Rk-io-A/ai-content-generator
+```
 
-3. **SaaS Analytics Dashboard** — https://github.com/Rk-io-A/saas-analytics-dashboard  
-   MRR · Churn · Active subscribers
+## Domain roles
 
-4. **Realtime Whiteboard** — https://github.com/Rk-io-A/realtime-whiteboard  
-   WebSockets · Collaborative canvas · Live chat
+```text
+rajivkapur.in.net             personal technology portfolio
+rajivkapur.info               working Product Lab demos
+casestudies.rajivkapur.in.net case-study presentation
+```
 
-5. **AI Content Generator** — https://github.com/Rk-io-A/ai-content-generator  
-   SEO blog generation · Meta · Keywords · Score
+## Data policy
 
-## Note
+- Do not present illustrative metrics as customer results.
+- Do not enter confidential client/customer information into public demos.
+- Production Sirmint/DealNavo products are documented in their own repositories and should not be conflated with portfolio prototypes.
 
-- This repo is **case studies only** (no About / Contact portfolio pages in the main flow).
-- Custom domain: `casestudies.rajivkapur.in.net`
-
----
-
-Rajiv Kapur · Software Architect & Full Stack Developer  
-https://github.com/Rk-io-A
+Rajiv Kapur — Software Architect & Full-Stack Developer
